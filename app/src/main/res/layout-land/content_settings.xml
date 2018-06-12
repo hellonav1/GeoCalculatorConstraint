@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Settings"
+    android:orientation="horizontal"
+    android:layout_weight="1"
+
+    tools:showIn="@layout/activity_settings">
+
+    <RelativeLayout
+        android:id="@+id/left_half"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+
+
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/distance_units"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Spinner
+            android:id="@+id/distanceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="69dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_half"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+
+
+            android:gravity="center"
+            android:text="@string/bearing_units"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="119dp" />
+
+        <Spinner
+            android:id="@+id/bearingSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="172dp" />
+    </RelativeLayout>
+
+</LinearLayout>
